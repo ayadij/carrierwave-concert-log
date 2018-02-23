@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Concert Log</h1>
+<h3>details</h3>
+
+<hr><br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Artists</th>
+      <th>Venue</th>
+      <th colspan="3"><%= "Actions" if logged_in?(:site_admin) %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @logs.each do |log| %>
+      <tr>
+        <td><%= log.name %></td>
+        <td><%= log.artists %></td>
+        <td><%= log.venue %></td>
+        <td><%= link_to 'Details', log %></td>
+        <td><%= link_to 'Edit', edit_log_path(log) if logged_in?(:site_admin) %></td>
+        <td><%= link_to 'Delete', log, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<p><%= link_to 'Create New Log', new_log_path if logged_in?(:site_admin)%></p>

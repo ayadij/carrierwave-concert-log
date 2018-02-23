@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<h1>List of Concerts</h1>
+<h3>in my concert log</h3>
+
+<hr><br>
+
+<% @logs.each do |log| %>
+  <p><%= log.name %> <%= link_to 'Details', log %></p>
+<% end %>
