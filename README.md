@@ -1,16 +1,16 @@
 # README
 
-### Site requirements:
-* build a rails app with postgresql
-* create CRUD for blogs/posts
-* install devise
-* install petergate
-* install bootstrap
-* make it so users can only visit the home page without registering or signing in
-* a signed in users should only be able to read blogs/posts
-* setup an admin who can edit/create/and delete blogs/posts
-* create a nav bar
-* store it in a partial and render it in the layout file
-* use bootstrap to style the nav-bar
-* use google fonts to further customization
-* implement an image link in the nav-bar
+### Project requirements
+- uses postgresql
+- CRUD functionality
+- nav-bar stored in a partial 
+- image logo link in nav-bar
+- devise gem
+- petergate gem
+- bootstrap
+- google fonts
+- useers can only visit the home page when not registered or signed in
+- signed in user can view all content but cannot create, edit, or destroy log posts
+- admin user can create, edit, and destroy log posts
+- uses carrierwave to allow a user to upload photos on the page and see them displayed
+- linking to aws bucket is an optional bonus
