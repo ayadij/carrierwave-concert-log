@@ -14,3 +14,5 @@
 - admin user can create, edit, and destroy log posts
 - uses carrierwave to allow a user to upload photos on the page and see them displayed
 - linking to aws bucket is an optional bonus
+
+$ cd Documents/code/practice/practice-rails-apps/applesoup/water/concert-log
