@@ -56,3 +56,8 @@ gem 'petergate', '~> 1.8', '>= 1.8.1'
 gem 'bootstrap', '~> 4.0'
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 
+# dependency vulnerabilities 
+gem 'loofah', '~> 2.2.1'
+gem 'rails-html-sanitizer', '~> 1.0.4'
+
+
